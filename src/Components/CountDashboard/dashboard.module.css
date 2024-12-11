@@ -1,0 +1,36 @@
+.dashboardContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--gray-3);
+  box-shadow: var(--box-shadow-flat);
+  background-color: var(--white);
+  padding: var(--space-12);
+  border-radius: var(--border-radius-8);
+}
+
+.statsContainer {
+  display: flex;
+  column-gap: var(--space-8);
+  align-items: center;
+}
+
+.borderRight {
+  width: 1px;
+  height: 30px;
+}
+
+.counts {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-16);
+  color: var(--text-color-primary);
+}
+
+.header {
+  font-size: var(--font-size-12);
+  color: var(--text-color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: var(--space-4);
+}

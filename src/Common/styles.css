@@ -1,0 +1,101 @@
+:root {
+  --primary-tint-1: #f3f0ff;
+  --primary-tint-2: #d6d1ff;
+  --primary-tint-3: #7e78f0;
+  --primary-base: #504ee4;
+  --primary-shade-1: #3739bd;
+  --primary-shade-2: #151d70;
+  --primary-shade-3: #0d144a;
+
+  --success-tint-1: #dcf5e2;
+  --success-tint-2: #7bdb96;
+  --success-tint-3: #2fc262;
+  --success-base: #0eb54e;
+  --success-shade-1: #048f3e;
+  --success-shade-2: #004220;
+  --success-shade-3: #001c0e;
+
+  --danger-tint-1: #fff4f0;
+  --danger-tint-2: #ffb19e;
+  --danger-tint-3: #fc634c;
+  --danger-base: #ef3621;
+  --danger-shade-1: #c91e12;
+  --danger-shade-2: #7d0000;
+  --danger-shade-3: #570003;
+
+  --warning-tint-1: #fff9e6;
+  --warning-tint-2: #ffd57a;
+  --warning-tint-3: #ffad29;
+  --warning-base: #fc9300;
+  --warning-shade-1: #d67600;
+  --warning-shade-2: #8a4300;
+  --warning-shade-3: #632d00;
+
+  --info-tint-1: #e6f8ff;
+  --info-tint-2: #80d4ff;
+  --info-tint-3: #2eabff;
+  --info-base: #0591fc;
+  --info-shade-1: #0072d6;
+  --info-shade-2: #00408a;
+  --info-shade-3: #002b63;
+
+  --white: #ffffff;
+
+  --gray-1: #f5f5f7;
+  --gray-2: #ebecee;
+  --gray-3: #e1e1e3;
+  --gray-4: #cececf;
+  --gray-5: #bababc;
+
+  --text-color-title: rgba(8, 12, 43, 0.85);
+  --text-color-primary: rgba(8, 12, 43, 0.8);
+  --text-color-secondary: rgba(8, 12, 43, 0.65);
+  --text-color-disabled: rgba(8, 12, 43, 0.45);
+
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-30: 30px;
+  --space-32: 32px;
+  --space-36: 36px;
+  --space-40: 40px;
+
+  --border-radius-4: 4px;
+  --border-radius-8: 8px;
+
+  --box-shadow-flat: 0px 0px 2px rgba(8, 12, 43, 0.16),
+    0px 1px 4px rgba(8, 12, 43, 0.12);
+  --box-shadow-flat-active: 0px 1px 4px rgba(8, 12, 43, 0.16),
+    0px 4px 8px rgba(8, 12, 43, 0.12);
+  --box-shadow-fixed: 0px 0px 2px rgba(8, 12, 43, 0.16),
+    0px 2px 4px rgba(8, 12, 43, 0.12);
+  --box-shadow-fixed-reverse: 0px 0px 2px rgba(8, 12, 43, 0.16),
+    0px -2px 4px rgba(8, 12, 43, 0.12);
+  --box-shadow-raised: 0px 4px 8px rgba(8, 12, 43, 0.16),
+    0px 8px 24px rgba(8, 12, 43, 0.24);
+  --box-shadow-scrim: 0px 12px 24px -4px rgba(8, 12, 43, 0.24),
+    0px 8px 64px rgba(8, 12, 43, 0.32);
+  --box-shadow-low-raised: 2px 0px 3px rgba(219, 219, 220, 0.45);
+}

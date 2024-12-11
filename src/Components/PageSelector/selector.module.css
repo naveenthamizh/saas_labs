@@ -1,0 +1,58 @@
+.pageSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-16);
+}
+
+/* Navigation Buttons */
+.navigationButton {
+  padding: var(--space-8) var(--space-16);
+  border: 1px solid var(--gray-4);
+  border-radius: 4px;
+  background-color: var(--primary-tint-2);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.navigationButton:hover {
+  border: 1px solid var(--primary-base);
+}
+
+.navigationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Page Number Buttons */
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.pageButton {
+  min-width: 40px;
+  padding: var(--space-8) var(--space-12);
+  border: 1px solid var(--gray-4);
+  border-radius: var(--border-radius-4);
+  background-color: var(--gray-1);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pageButton:hover {
+  border: 1px solid var(--primary-base);
+}
+
+.pageButton.active {
+  background-color: var(--primary-tint-1);
+  color: var(--primary-base);
+  border-color: var(--primary-base);
+}
+
+.pageEllipsis {
+  padding: 8px 12px;
+  color: #6c757d;
+}
