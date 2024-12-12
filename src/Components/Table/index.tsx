@@ -1,6 +1,6 @@
 import React from "react";
 
-import { classNames } from "../../Common/utils";
+import { classNames } from "../../Common/helpers/utils";
 
 import { CellProps, RowProps, TableProps } from "./type";
 

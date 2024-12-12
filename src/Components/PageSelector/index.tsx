@@ -1,8 +1,7 @@
 import { useMemo } from "react";
-import { classNames } from "../../Common/utils";
+import { classNames } from "../../Common/helpers/utils";
 import styles from "./selector.module.css";
 
-// Interface for PageSelector props
 interface PageSelectorProps {
   currentPage: number;
   totalPages: number;
@@ -45,8 +44,6 @@ export const PageSelector = ({
       ...lastPages,
     ];
   }, [currentPage, totalPages, siblingCount]);
-
-  // Render page buttons
 
   return (
     <div

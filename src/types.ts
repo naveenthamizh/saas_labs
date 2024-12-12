@@ -8,3 +8,8 @@ export enum SORT_TYPE {
   ASC = "asc",
   DES = "des",
 }
+
+export type TSortType = {
+  order: SORT_TYPE;
+  key?: keyof ITableData;
+};
