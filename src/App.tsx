@@ -1,16 +1,18 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BiSortDown, BiSortUp } from "react-icons/bi";
 
+import { CountDashboard } from "./Components/CountDashboard";
 import { Table } from "./Components/Table";
 import { PageSelector } from "./Components/PageSelector";
 
+import { Dropdown } from "./Common/Components/Dropdown";
+import RenderWhen from "./Common/helpers/RenderWhen";
+
 import { ITableData, SORT_TYPE, TSortType } from "./types";
 
-import styles from "./app.module.css";
-import { CountDashboard } from "./Components/CountDashboard";
-import RenderWhen from "./Common/helpers/RenderWhen";
 import { getTableData } from "./services";
-import { Dropdown } from "./Common/Components/Dropdown";
+
+import styles from "./app.module.css";
 
 const tableHeader: Array<{ id: keyof ITableData; label: string }> = [
   {
@@ -75,6 +77,7 @@ function App() {
   return (
     <section className={styles.tableContainer}>
       <h2 className={styles.header}>Highly-rated kickstarter projects</h2>
+
       <div className={styles.recordSelector}>
         <div>Records per page:</div>
         <Dropdown
@@ -86,6 +89,7 @@ function App() {
           }}
         />
       </div>
+
       <div className={styles.CountDashboard}>
         <CountDashboard tableData={tableDataRef.current} />
       </div>
@@ -139,6 +143,8 @@ function App() {
           totalPages={totalPages.current}
           onPageChange={(page) => {
             setIsLoading(true);
+            // why timeout?
+            // to delay set, so until the skeleton loads
             setTimeout(() => {
               setCurrentPage(page);
               setIsLoading(false);

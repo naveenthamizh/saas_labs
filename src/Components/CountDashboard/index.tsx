@@ -4,6 +4,7 @@ import { LiaMountainSolid } from "react-icons/lia";
 import { FaChartBar } from "react-icons/fa";
 
 import { ITableData } from "../../types";
+
 import styles from "./dashboard.module.css";
 
 type TCountDashboard = {
